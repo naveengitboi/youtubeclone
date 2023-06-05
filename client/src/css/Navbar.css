@@ -1,0 +1,20 @@
+.navbar 
+{
+    background-color: var(--darkBg);
+    width: 100vw;
+    padding: 1rem 0;
+    z-index: 40;
+}
+
+.logo .titles {
+    
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.logo .titles svg {
+    color: red;
+    font-size: 1.85rem;
+    margin: 0 1rem;
+}

@@ -1,0 +1,67 @@
+.menuContainer 
+{
+    height: 100vh;
+    width: max-content;
+    background-color: var(--darkBg);
+    font-family: poppins, 'Roboto';
+    padding: 4rem 0.85rem ;
+    position: sticky;
+    top: 0;
+    left: 0;
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+    z-index: -1;
+}
+/* Width */
+::-webkit-scrollbar{
+    width: 10px;
+    
+
+}
+/* Track */
+::-webkit-scrollbar-track
+{
+    background-color: rgb(35, 35, 35);
+}
+::-webkit-scrollbar-thumb
+{
+    height: 30px;
+    background-color: #4f4f4f;
+    border-radius: 8px;
+}
+
+
+
+hr 
+{
+    background-color: #ff0000;
+    color: blue;
+    border: 1px solid var(--hrColor);
+}
+
+.navLinks
+{
+    display: flex;
+    flex-direction: column;
+}
+.navLinks a
+{
+    padding: .5rem 1.25rem;
+    display: flex;
+    font-size: 0.85rem;
+    align-items: center;
+}
+.navLinks a svg
+{
+    margin-right: .85rem;
+    font-size: 1rem;
+}
+.navLinks p 
+{
+    color: rgb(142, 142, 142);
+    margin: 1rem 0.25rem 0.25rem;
+}
+.copyrightSection 
+{
+    font-size: .5rem;
+}
