@@ -1,20 +1,79 @@
-.navbar 
-{
-    background-color: var(--darkBg);
-    width: 100vw;
-    padding: 1rem 0;
-    z-index: 40;
+.navbar {
+  background-color: var(--darkBg);
+  width: 100vw;
+  padding: 0.55rem 1rem;
+  z-index: 40;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo .titles {
-    
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
 }
 
 .logo .titles svg {
-    color: red;
-    font-size: 1.85rem;
-    margin: 0 1rem;
+  color: red;
+  font-size: 1.85rem;
+  margin: 0 1rem;
 }
+.searchBar {
+  width: 35vw;
+  padding: 0.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+    border: 1px solid gray;
+    border-radius: 1.25rem;
+}
+.searchBar input 
+{
+    width: 90%;
+    font-size: 1rem;
+    padding: 0.25rem 1rem ;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    border-right: 1px solid gray;
+}
+.searchIcon
+{
+    display: inline-block;
+    /* padding: .35rem; */
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+.searchIcon svg 
+{
+    color: white;
+    font-size: 1.35rem;
+}
+
+.logInSection 
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.35rem;
+
+}
+.logInSection svg 
+{
+    margin:0 0.65rem;
+}
+.userProfile img
+{
+    height: 30px;
+    width: 30px;
+    margin-left: 0.25rem;
+    border-radius: 50%;
+}
+

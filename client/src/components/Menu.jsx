@@ -6,8 +6,7 @@ import {BsFilm} from 'react-icons/bs'
 import {SiYoutubegaming} from 'react-icons/si'
 function Menu(){
     return(
-        <div className="menuContainer">
-            
+        <div className="menuContainer">    
             <ul className="navLinks">
                 <NavLink><AiFillHome/> Home</NavLink>
                 <NavLink><AiFillHome/> Shorts</NavLink>
@@ -42,7 +41,6 @@ function Menu(){
                 <span> <AiOutlineCopyrightCircle/> 2023 Google LLC </span>
                 </p>
             </ul>
-
         </div>
     )
 }

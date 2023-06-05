@@ -1,11 +1,11 @@
 .menuContainer 
 {
     height: 100vh;
-    width: max-content;
+    width: 200px;
     background-color: var(--darkBg);
     font-family: poppins, 'Roboto';
     padding: 4rem 0.85rem ;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     overflow-y:scroll;
@@ -63,5 +63,5 @@ hr
 }
 .copyrightSection 
 {
-    font-size: .5rem;
+    font-size: .8rem;
 }
