@@ -1,7 +1,7 @@
 .menuContainer 
 {
     height: 100vh;
-    width: 200px;
+    width: 12.5rem;
     background-color: var(--darkBg);
     font-family: poppins, 'Roboto';
     padding: 4rem 0.85rem ;

@@ -1,9 +1,11 @@
 import VideoCards from "../components/VideoCards"
-
+import Content from "../Content"
 function Home(){
     return(
         <>
-        <VideoCards/>
+        <div className="page">
+            <VideoCards content = {Content} />
+        </div>
         </>
     )
 }
