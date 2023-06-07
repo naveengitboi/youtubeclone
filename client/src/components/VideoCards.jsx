@@ -3,7 +3,7 @@ import '../css/VideoCards.css'
 function VideoCards(props) {
   return (
     <div className="card">
-      <img className='thumbnail' src="" alt="" />
+      <img className='thumbnail' src={props.content[0].thumbnail} alt="" />
       <div className="videoDesc">
           <img src="" alt="" />
          <div className="details">
