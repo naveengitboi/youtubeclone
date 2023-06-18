@@ -1,0 +1,92 @@
+export const ytData = [
+    {
+       title:'WTC Final 2023| What does Virak Kohli Think about steve smith?',
+       channelName:"Star Sports",
+       viewsCount: "67K Views",
+       dateTime:"1 hr ago"
+    },
+        {
+       title:'WTC Final 2023| What does Virak Kohli Think about steve smith?',
+       channelName:"Star Sports",
+       viewsCount: "67K Views",
+       dateTime:"1 hr ago"
+    }
+    ,
+        {
+       title:'WTC Final 2023| What does Virak Kohli Think about steve smith?',
+       channelName:"Star Sports",
+       viewsCount: "67K Views",
+       dateTime:"1 hr ago"
+    }
+    ,
+        {
+       title:'WTC Final 2023| What does Virak Kohli Think about steve smith?',
+       channelName:"Star Sports",
+       viewsCount: "67K Views",
+       dateTime:"1 hr ago"
+    }
+    ,
+        {
+       title:'WTC Final 2023| What does Virak Kohli Think about steve smith?',
+       channelName:"Star Sports",
+       viewsCount: "67K Views",
+       dateTime:"1 hr ago"
+    }
+    ,
+        {
+       title:'WTC Final 2023| What does Virak Kohli Think about steve smith?',
+       channelName:"Star Sports",
+       viewsCount: "67K Views",
+       dateTime:"1 hr ago"
+    }
+    ,
+        {
+       title:'WTC Final 2023| What does Virak Kohli Think about steve smith?',
+       channelName:"Star Sports",
+       viewsCount: "67K Views",
+       dateTime:"1 hr ago"
+    }
+    ,
+        {
+       title:'WTC Final 2023| What does Virak Kohli Think about steve smith?',
+       channelName:"Star Sports",
+       viewsCount: "67K Views",
+       dateTime:"1 hr ago"
+    }
+    ,
+        {
+       title:'WTC Final 2023| What does Virak Kohli Think about steve smith?',
+       channelName:"Star Sports",
+       viewsCount: "67K Views",
+       dateTime:"1 hr ago"
+    }
+    ,
+        {
+       title:'WTC Final 2023| What does Virak Kohli Think about steve smith?',
+       channelName:"Star Sports",
+       viewsCount: "67K Views",
+       dateTime:"1 hr ago"
+    }
+    ,
+        {
+       title:'WTC Final 2023| What does Virak Kohli Think about steve smith?',
+       channelName:"Star Sports",
+       viewsCount: "67K Views",
+       dateTime:"1 hr ago"
+    }
+    ,
+        {
+       title:'WTC Final 2023| What does Virak Kohli Think about steve smith?',
+       channelName:"Star Sports",
+       viewsCount: "67K Views",
+       dateTime:"1 hr ago"
+    }
+    ,
+        {
+       title:'WTC Final 2023| What does Virak Kohli Think about steve smith?',
+       channelName:"Star Sports",
+       viewsCount: "67K Views",
+       dateTime:"1 hr ago"
+    }
+    
+]
