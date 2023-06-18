@@ -1,6 +1,6 @@
-export const ytData = [
+const ytData = [
     {
-       title:'WTC Final 2023| What does Virak Kohli Think about steve smith?',
+       "title":'WTC Final 2023| What does Virak Kohli Think about steve smith?',
        channelName:"Star Sports",
        viewsCount: "67K Views",
        dateTime:"1 hr ago"
@@ -90,3 +90,7 @@ export const ytData = [
     }
     
 ]
+
+
+
+export default ytData
