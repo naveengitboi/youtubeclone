@@ -1,23 +1,18 @@
 import VideoCards from "../components/VideoCards"
 import '../css/Home.css'
-import Content from "../Content"
+
+import {ytData} from '../data.js/Data'
 function Home(){
+    console.log(ytData)
     return(
         <>
+        <VideoCards/>
         <div className="homePage">
-            <VideoCards content = {Content} />
-            <VideoCards content = {Content} />
-            <VideoCards content = {Content} />
-            <VideoCards content = {Content} />
-            <VideoCards content = {Content} />
-            <VideoCards content = {Content} />
-            <VideoCards content = {Content} />
-            <VideoCards content = {Content} />
-            <VideoCards content = {Content} />
-            <VideoCards content = {Content} />
-            <VideoCards content = {Content} />
-            <VideoCards content = {Content} />
-            <VideoCards content = {Content} />
+           {
+            ytData.map((item, index) => {
+                <VideoCards vcData = {item.title}/>
+            })
+           }
         </div>
         </>
     )

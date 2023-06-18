@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/VideoCards.css'
 function VideoCards(props) {
+  console.log(props)
   return (
     <div className="card">
       <div className="thumbnailDiv">
@@ -9,7 +10,7 @@ function VideoCards(props) {
       <div className="videoDesc">
           <img src="/assets/videoCard/channelLogo.jpg" className='channelLogo' alt="" />
          <div className="details">
-           <h3 className='smallTitle'>{props.content[0].title}</h3>
+           <h3 className='smallTitle'>Hello world</h3>
            <p className='channelDetailsText'>Star Sports</p>
            <p className='viewsCounts'>67K Views . 1 hr ago</p>
          </div>
