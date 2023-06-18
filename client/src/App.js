@@ -12,12 +12,14 @@ function App(){
     <>
     <Menu/>
     <Navbar/>
-      <Routes>
+      <div className="pages">
+        <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path ='video'>
           <Route path=":/id" element={<VideoCards/>}></Route>
         </Route>
       </Routes>
+      </div>
     </>
   )
 }

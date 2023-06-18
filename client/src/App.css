@@ -21,6 +21,21 @@ sans-serif; */
     --textColor: #ffffff;
     --linkColor:#ffffff;
     --hrColor: #3c3c3c;
+    --channelText:#767676;
+}
+
+
+
+
+body 
+{
+    background: var(--darkBg);
+}
+.pages 
+{
+    margin-left: 14rem;
+    padding-top: 5rem;
+
 }
 
 .titles 
@@ -37,12 +52,25 @@ a
     color: var(--linkColor);
 }
 
-body 
+.smallTitle 
 {
-    background: var(--darkBg);
+    font-size: 0.86rem;
+    font-family: poppins;
+    font-weight: 500;
+
 }
-.page 
+
+.channelDetailsText
 {
-    color: white;
-    padding: 1rem 1rem 1rem 13.5rem;
+    font-size: 0.8rem ;
+    font-weight: 500;
+    font-family: poppins;
+    color: var(--channelText);
+}
+
+.viewsCounts
+{
+    font-size: 0.7rem;
+    color: var(--channelText);
+    font-family: poppins;
 }

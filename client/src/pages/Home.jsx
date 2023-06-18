@@ -1,9 +1,10 @@
 import VideoCards from "../components/VideoCards"
+import '../css/Home.css'
 import Content from "../Content"
 function Home(){
     return(
         <>
-        <div className="videoPage">
+        <div className="homePage">
             <VideoCards content = {Content} />
             <VideoCards content = {Content} />
             <VideoCards content = {Content} />

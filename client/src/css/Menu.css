@@ -10,8 +10,6 @@
     left: 0;
     overflow-y:scroll;
     scroll-behavior: smooth;
-    z-index: -1;
-    flex: 1;
 }
 /* Width */
 ::-webkit-scrollbar{

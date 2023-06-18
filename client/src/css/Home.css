@@ -1,0 +1,8 @@
+.homePage 
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 7;
+    justify-content: space-around;
+    align-items: center;
+}
