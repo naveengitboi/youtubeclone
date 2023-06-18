@@ -3,7 +3,19 @@ import Content from "../Content"
 function Home(){
     return(
         <>
-        <div className="page">
+        <div className="videoPage">
+            <VideoCards content = {Content} />
+            <VideoCards content = {Content} />
+            <VideoCards content = {Content} />
+            <VideoCards content = {Content} />
+            <VideoCards content = {Content} />
+            <VideoCards content = {Content} />
+            <VideoCards content = {Content} />
+            <VideoCards content = {Content} />
+            <VideoCards content = {Content} />
+            <VideoCards content = {Content} />
+            <VideoCards content = {Content} />
+            <VideoCards content = {Content} />
             <VideoCards content = {Content} />
         </div>
         </>
