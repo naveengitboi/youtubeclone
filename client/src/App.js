@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from './pages/Home'
 
 import {Routes,Route} from 'react-router-dom'
+import VideoCards from "./components/VideoCards";
 
 function App(){
   return(
@@ -13,6 +14,9 @@ function App(){
     <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
+        <Route path ='video'>
+          <Route path=":/id" element={<VideoCards/>}></Route>
+        </Route>
       </Routes>
     </>
   )
