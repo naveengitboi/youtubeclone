@@ -22,6 +22,9 @@ sans-serif; */
     --linkColor:#ffffff;
     --hrColor: #3c3c3c;
     --channelText:#767676;
+    --brRadius:1rem;
+    --btnBg:#272727;
+    --grayText:#a2a2a2;
 }
 
 
@@ -59,25 +62,29 @@ a
     font-family: poppins;
     
 }
-
-.smallTitle 
+.channelName 
 {
-    font-size: 0.86rem;
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: Roboto;
+}
+.smallTexts     
+{
+    font-size: 0.75rem;
     font-family: poppins;
     font-weight: 500;
 }
-
+.tinyTexts 
+{
+    font-size: 0.7rem;
+    font-weight: 400;
+    font-family: poppins;
+    color: var(--grayText);
+}
 .channelDetailsText
 {
     font-size: 0.8rem ;
     font-weight: 500;
     font-family: poppins;
     color: var(--channelText);
-}
-
-.viewsCounts
-{
-    font-size: 0.7rem;
-    color: var(--channelText);
-    font-family: poppins;
 }

@@ -16,8 +16,8 @@ function VideoPlaying() {
               <p className='tinyTexts'>217K Subscribers</p>
             </div>
             <div className="joinSub">
-              <button>Join</button>
-              <button>Subscribe</button>
+              <button className='smallButtons'>Join</button>
+              <button className='smallButtons'>Subscribe</button>
             </div>
             </div>
 
