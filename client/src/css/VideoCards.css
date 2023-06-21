@@ -2,21 +2,18 @@
 {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    width: 380px;
-    height: 290px;
+    width: 360px;
     border-radius: 1rem;
     margin: 1rem 0;
-    border: 1px solid rgba(32, 32, 32, 0.571);
+}
+.card:hover 
+{
+    cursor: pointer;
 }
 .thumbnailDiv
 {
     width: 100%;
-    overflow:hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 1.25rem;
   
 }
@@ -24,6 +21,7 @@
 {
     width: 100%;
     border-radius: 1.25rem;
+    height: 202px;
 }
 .videoDesc
 {
@@ -35,9 +33,14 @@
 .channelLogo
 {
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     margin:0 0.5rem ;
+}
+
+.viewsCounts span
+{
+    margin-right: 0.25rem;
 }
 
 
