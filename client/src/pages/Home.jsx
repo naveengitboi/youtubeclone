@@ -4,11 +4,10 @@ import ytData from '../data.js/Data'
 function Home(){
     return(
         <>
-        <VideoCards/>
         <div className="homePage">
            {
             ytData.map((item, index) => (
-                <VideoCards vcData= {item}/>
+                <VideoCards key={index} vcData= {item}/>
             ))
            }
         </div>
