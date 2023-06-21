@@ -1,0 +1,41 @@
+.videoContainer
+{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 700px;
+}
+
+.video 
+{
+    width: 700px;
+    height: 400px;
+    background-color: white;
+
+}
+
+.videoInfo
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.channelBanner
+{
+    display: flex;
+    align-items: center;
+    border: 1px solid wheat;
+}
+.channel 
+{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid wheat;
+}
+
+.channelDetail
+{
+    border: 1px solid white;
+}

@@ -6,10 +6,10 @@ function VideoCards(props) {
   const channelName = props.vcData.channelName
   const views = props.vcData.viewsCount
   const dateTime =  props.vcData.dateTime
-  const id = props.vcData.id
+  // const id = props.vcData.id
   return (
 
-    <Link to={`\video/` + {id}}>
+    <Link to="/videoplay">
        <div className="card">
       <div className="thumbnailDiv">
         <img className='thumbnail' src='/assets/videoCard/thumbnail.png' alt="" />

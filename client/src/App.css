@@ -52,6 +52,14 @@ a
     color: var(--linkColor);
 }
 
+.videoTitle
+{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: poppins;
+    
+}
+
 .smallTitle 
 {
     font-size: 0.86rem;
