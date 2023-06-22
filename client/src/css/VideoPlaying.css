@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     color: white;
-    width: 900px;
+    width: 1000px;
 }
 
 .video 
@@ -67,7 +67,15 @@
     display: flex;
     align-items: center;
 }
-
+.likesCount div 
+{
+    display: flex;
+    align-items: center;
+}
+.likesCount div:hover 
+{
+    cursor: pointer;
+}
 .smallButtons
 {
     background-color: var(--btnBg);
@@ -80,9 +88,16 @@
 }
 .likes span 
 {
-    padding: 0.25rem 0.5rem;
+    padding: 0.1rem 0.4rem;
+    display: flex;
+    align-items: center;
 }
 .likes span:nth-child(1)
 {
     border-right: 1px solid var(--hrColor);
+}
+
+svg 
+{
+    font-size: 1rem;
 }
