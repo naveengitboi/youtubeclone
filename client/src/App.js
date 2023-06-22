@@ -6,6 +6,7 @@ import Home from './pages/Home'
 
 import {Routes,Route} from 'react-router-dom'
 import VideoCards from "./components/VideoCards";
+import VideoPlaying from "./pages/VideoPlaying";
 
 function App(){
   return(
@@ -16,8 +17,9 @@ function App(){
       <Routes>
         <Route path="/">
           <Route index element={<Home/>} />
-          <Route path="video">
+          <Route path="videoplay">
             <Route path=":id" element={<VideoCards/>}/>
+            <Route path="/videoplay/" element={<VideoPlaying/>}></Route>
           </Route>
         </Route>
       </Routes>
