@@ -1,5 +1,8 @@
 import React from 'react'
 import '../css/VideoPlaying.css'
+import {AiOutlineLike,AiOutlinePaperClip,AiOutlineBell} from 'react-icons/ai'
+import {BiDislike} from 'react-icons/bi'
+import {TbShare3,TbPigMoney,TbTableOptions,TbPlaylistAdd} from 'react-icons/tb'
 function VideoPlaying() {
   return (
     <div className='videoContainer'>
