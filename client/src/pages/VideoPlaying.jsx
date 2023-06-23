@@ -3,6 +3,7 @@ import '../css/VideoPlaying.css'
 import {AiOutlineLike,AiOutlinePaperClip,AiOutlineBell} from 'react-icons/ai'
 import {BiDislike} from 'react-icons/bi'
 import {TbShare3,TbPigMoney,TbTableOptions,TbPlaylistAdd} from 'react-icons/tb'
+import Comments from '../components/Comments'
 function VideoPlaying() {
   return (
     <div className='videoContainer'>
@@ -47,7 +48,7 @@ function VideoPlaying() {
             <p className='tinyTexts'>show more</p>
         </div>
         <div className="comments">
-
+          <Comments/>
         </div>
       </div>
     </div>

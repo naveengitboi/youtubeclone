@@ -1,0 +1,46 @@
+.commentContainer 
+{
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.commentSub
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.comment 
+{
+    /* flex-grow: 1; */
+    width: 95%;
+}
+.commentText
+{
+    border: none;
+    border-bottom: 2px solid var(--btnBg);
+    background-color: transparent;
+    width: 100%;
+    padding: 0.15rem 1rem;
+    outline: none;
+    color: white;
+
+}
+.submittingDiv
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.25rem    ;
+}
+.submitBtns button
+{
+    background-color: transparent;
+    border: 1px solid var(--btnBg);
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border-radius: var(--brRadius);
+    margin:0 0.5rem ;
+
+}
