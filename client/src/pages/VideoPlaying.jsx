@@ -15,31 +15,40 @@ function VideoPlaying() {
             <div className="channelDetail">
               <div className="channelImage"></div>
             <div className="channelInfo">
-              <h3 className='channelName'>Lama Dev</h3>
+              <h3 className='channelName'>_naveen_au</h3>
               <p className='tinyTexts'>217K Subscribers</p>
             </div>
             <div className="joinSub">
               <button className='smallButtons'>Join</button>
-              <button className='smallButtons'>Subscribe</button>
+              <button className='smallButtons'> <AiOutlineBell/> Subscribe</button>
             </div>
             </div>
 
             <div className="likesCount">
               <div className="smallButtons likes">
-                <span className='smallTexts'>1.8K</span>
-                <span className='smallTexts'>1K</span>
+                <span className='smallTexts'> <AiOutlineLike/> 1.8K</span>
+                <span className='smallTexts'> <BiDislike/></span>
               </div>
 
-              <div className="smallButtons smallTexts">Share</div>
-              <div className="smallButtons smallTexts">Thanks</div>
-              <div className="smallButtons smallTexts">Clip</div>
-              <div className="smallButtons smallTexts">Save</div>
-              <div className="smallButtons smallTexts">Report</div>
+              <div className="smallButtons smallTexts"> <TbShare3/> Share</div>
+              <div className="smallButtons smallTexts"> <TbPigMoney/> Thanks</div>
+              <div className="smallButtons smallTexts"> <AiOutlinePaperClip/>Clip</div>
+              <div className="smallButtons smallTexts"><TbPlaylistAdd/> Save</div>
+              <div className="smallButtons smallTexts"><TbTableOptions/></div>
             </div>
           </div>
         </div>
-        <div className="videoDescription"></div>
-        <div className="comments"></div>
+        <div className="videoDescription">
+          <h3 className='tinyTexts'>1.3M views 1year ago</h3>
+          <p className='tinyTexts'>
+            Subscribe for more content like this! 
+            I made my cheap keQing cosplay look like a movie(KINDA)
+          </p>
+            <p className='tinyTexts'>show more</p>
+        </div>
+        <div className="comments">
+
+        </div>
       </div>
     </div>
   )
