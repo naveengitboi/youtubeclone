@@ -1,12 +1,16 @@
 import '../css/Menu.css'
 import { NavLink } from "react-router-dom"
-import {AiFillHome, AiOutlineMenu, AiFillYoutube, AiOutlineHistory,AiOutlineLike,AiOutlineFire,AiOutlineShopping, AiOutlineFlag, AiOutlineVideoCamera, AiOutlineWifi, AiOutlineRead, AiOutlineCopyrightCircle} from 'react-icons/ai'
+import {AiFillHome, AiFillYoutube, AiOutlineHistory,AiOutlineLike,AiOutlineFire,AiOutlineShopping, AiOutlineFlag, AiOutlineVideoCamera, AiOutlineWifi, AiOutlineRead, AiOutlineCopyrightCircle} from 'react-icons/ai'
 import {MdVideoLibrary, MdOutlineWatchLater,MdOutlineSettings, MdOutlineHelpOutline,MdOutlineFeedback, MdNewspaper} from 'react-icons/md'
 import {BsFilm} from 'react-icons/bs'
 import {SiYoutubegaming} from 'react-icons/si'
-function Menu(){
+
+
+function Menu({closingTime}){
+
     return(
-        <div className="menuContainer">    
+        <div className="menuContainer" style={closingTime?{left:"-40vw"} : {left:0}}>   
+           
             <ul className="navLinks">
                 <NavLink><AiFillHome/> Home</NavLink>
                 <NavLink><AiFillHome/> Shorts</NavLink>
