@@ -38,8 +38,17 @@ function VideoPlaying() {
             </div>
           </div>
         </div>
-        <div className="videoDescription"></div>
-        <div className="comments"></div>
+        <div className="videoDescription">
+          <h3 className='tinyTexts'>1.3M views 1year ago</h3>
+          <p className='tinyTexts'>
+            Subscribe for more content like this! 
+            I made my cheap keQing cosplay look like a movie(KINDA)
+          </p>
+            <p className='tinyTexts'>show more</p>
+        </div>
+        <div className="comments">
+          
+        </div>
       </div>
     </div>
   )
