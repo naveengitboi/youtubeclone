@@ -1,7 +1,7 @@
 .commentContainer 
 {
     width: 100%;
-    margin: 2rem 0;
+    margin: 2rem 0 1rem;
 }
 
 .commentSub
@@ -43,4 +43,20 @@
     border-radius: var(--brRadius);
     margin:0 0.5rem ;
 
+}
+
+/* comment public */
+
+.commentLike
+{
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.commentLike span  
+{
+    margin: 0 1rem  0 .5rem;
+    
 }

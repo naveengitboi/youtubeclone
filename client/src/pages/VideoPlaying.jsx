@@ -4,6 +4,7 @@ import {AiOutlineLike,AiOutlinePaperClip,AiOutlineBell} from 'react-icons/ai'
 import {BiDislike} from 'react-icons/bi'
 import {TbShare3,TbPigMoney,TbTableOptions,TbPlaylistAdd} from 'react-icons/tb'
 import Comments from '../components/Comments'
+import PublicComment from '../components/PublicComment'
 function VideoPlaying() {
   return (
     <div className='videoContainer'>
@@ -47,8 +48,24 @@ function VideoPlaying() {
           </p>
             <p className='tinyTexts'>show more</p>
         </div>
-        <div className="comments">
+        <div className="addComment">
           <Comments/>
+        </div>
+        <div className="publicComment">
+          <PublicComment/>
+          <PublicComment/>
+          <PublicComment/>
+          <PublicComment/>
+          <PublicComment/>
+          <PublicComment/>
+          <PublicComment/>
+          <PublicComment/>
+          <PublicComment/>
+          <PublicComment/>
+          <PublicComment/>
+          <PublicComment/>
+          <PublicComment/>
+          <PublicComment/>
         </div>
       </div>
     </div>
