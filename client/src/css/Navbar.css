@@ -10,10 +10,18 @@
   top: 0;
 }
 
+.logo
+{
+  display: flex;
+  align-items: center;
+}
+
 .logo .titles {
   display: flex;
   align-items: center;
   text-transform: uppercase;
+  cursor: pointer;
+
 }
 
 .logo .titles svg {
