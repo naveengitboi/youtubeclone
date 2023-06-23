@@ -15,7 +15,7 @@ function VideoPlaying() {
             <div className="channelDetail">
               <div className="channelImage"></div>
             <div className="channelInfo">
-              <h3 className='channelName'>Lama Dev</h3>
+              <h3 className='channelName'>_naveen_au</h3>
               <p className='tinyTexts'>217K Subscribers</p>
             </div>
             <div className="joinSub">
@@ -47,7 +47,7 @@ function VideoPlaying() {
             <p className='tinyTexts'>show more</p>
         </div>
         <div className="comments">
-          
+
         </div>
       </div>
     </div>
