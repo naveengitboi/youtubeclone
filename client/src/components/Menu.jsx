@@ -12,11 +12,11 @@ function Menu({closingTime}){
         <div className="menuContainer" style={closingTime?{left:"-40vw"} : {left:0}}>   
            
             <ul className="navLinks">
-                <NavLink><AiFillHome/> Home</NavLink>
-                <NavLink><AiFillHome/> Shorts</NavLink>
-                <NavLink><AiFillHome/> Subscriptions</NavLink>
+                <NavLink to='/' ><AiFillHome/> Home</NavLink>
+                <NavLink to='/shorts' ><AiFillHome/> Shorts</NavLink>
+                <NavLink to='/subscriptions' ><AiFillHome/> Subscriptions</NavLink>
                 <hr />
-                <NavLink><MdVideoLibrary/> Library</NavLink>
+                <NavLink to='/library' ><MdVideoLibrary/> Library</NavLink>
                 <NavLink><AiOutlineHistory/> History</NavLink>
                 <NavLink><AiOutlineVideoCamera/> your videos</NavLink>
                 <NavLink><MdOutlineWatchLater/> Watch Later</NavLink>

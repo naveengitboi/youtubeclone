@@ -1,0 +1,96 @@
+.scrollContainer
+{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 90vh;
+
+}
+
+.scrollContainer::-webkit-scrollbar
+{
+    display: none;
+}
+
+.shortsContainer
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    padding: 0; 
+    scroll-snap-align: start;
+}
+
+.short 
+{
+    height: 85vh;
+    width: 450px;
+    border-radius: 1.5rem;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+.shortVideo 
+{
+    background-color: rgb(68, 68, 68);
+    position: relative;
+    border-radius: 1.5rem;
+}
+
+.shortInformation
+{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: 130px;
+    padding:0.5rem 1rem;
+    color: white;
+}
+
+.shortAccount
+{
+    display: flex;
+    align-items: center;
+    margin: 0.85rem 0;
+}
+
+.imageContainer
+{
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin: 0 0.85rem;
+}
+
+.btn 
+{
+    padding: 0.5rem 1.25rem;
+    margin-left: auto;
+    background-color: var(--whiteBtn);
+    border:none;
+    outline: none;
+    border-radius: var(--brRadius);
+}
+
+.likesSideBar 
+{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.icon 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 1rem 0;
+}
+

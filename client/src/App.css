@@ -22,9 +22,12 @@ sans-serif; */
     --linkColor:#ffffff;
     --hrColor: #3c3c3c;
     --channelText:#767676;
+    /* btn gray */
     --brRadius:1rem;
     --btnBg:#272727;
     --grayText:#a2a2a2;
+    /* white btn */
+    --whiteBtn:white;
 }
 
 
@@ -88,6 +91,12 @@ a
     font-size: 1rem;
     font-weight: normal;
     font-family: Roboto;
+}
+.mediumTexts 
+{
+    font-size: 0.85rem;
+    font-weight: 500;
+    font-family: sans-serif;
 }
 .smallTexts     
 {
