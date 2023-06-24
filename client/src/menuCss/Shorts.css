@@ -1,0 +1,52 @@
+.shortsContainer
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.short 
+{
+    height: 90vh;
+
+    width: 450px;
+    border-radius: 1.5rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+.shortVideo 
+{
+    background-color: rgb(255, 255, 255);
+}
+
+.shortInformation
+{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(150, 150, 150, 0.467);
+}
+
+.likesSideBar 
+{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.icon 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 1rem 0;
+}
