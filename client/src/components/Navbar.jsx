@@ -3,7 +3,7 @@ import { AiFillYoutube, AiOutlineVideoCameraAdd, AiOutlineBell,AiOutlineSearch }
 import {BsFillMicFill} from 'react-icons/bs'
 import {AiOutlineMenu} from 'react-icons/ai'
 import userProfile from '../img/user.jpg'
-import {Link} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 import '../css/Navbar.css'
 
 
@@ -26,7 +26,7 @@ function Navbar() {
         <AiOutlineVideoCameraAdd/>
         <AiOutlineBell/>
         <div className="userProfile">
-          <img src={userProfile} alt="" />
+          <NavLink to='/signinpage' ><button className='smallHeading'>Sign In</button></NavLink>
         </div>
       </div>
     </div>

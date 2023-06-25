@@ -10,7 +10,7 @@ import VideoPlaying from "./pages/VideoPlaying";
 import {AiOutlineMenu} from 'react-icons/ai'
 import { useState } from "react";
 import Shorts from "./menuComponents/Shorts";
-
+import SignIn from "./pages/SignIn";
 function App(){
       const [closeMenu, setCloseMenu] = useState(false)
   function handleMenu(){
@@ -37,6 +37,7 @@ function App(){
             <Route path="/videoplay/" element={<VideoPlaying/>}></Route>
           </Route>
           <Route path='/shorts' element={<Shorts/>} />
+          <Route path="/signinpage" element={<SignIn/>}/>
         </Route>
       </Routes>
       </div>
