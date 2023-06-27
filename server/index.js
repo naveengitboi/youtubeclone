@@ -1,7 +1,7 @@
-import express from 'express'
+import express, { application } from 'express'
 import mongoose, { mongo } from 'mongoose';
 import dotenv from 'dotenv'
-
+import userRoute from './routes/users.js'
 // dotenv 
 dotenv.config()
 
@@ -22,7 +22,18 @@ app.get('/', (req, res) => {
     res.send('Hello World')
 })
 
+app.use('/video', userRoute)
+
 app.listen(port, () => {
     connect();
     console.log(`server listening at port ${port}`);
 });
+
+
+
+
+
+
+
+
+//controllers --->  routes ---> index 

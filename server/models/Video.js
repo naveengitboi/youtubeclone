@@ -1,3 +1,5 @@
+//schema
+
 import mongoose from "mongoose";
 
 const VideoSchema = mongoose.Schema({
@@ -36,3 +38,6 @@ const VideoSchema = mongoose.Schema({
 
 
 export default mongoose.model('Video', VideoSchema)
+
+
+//schema
