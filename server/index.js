@@ -19,10 +19,10 @@ const app = express();
 const port = process.env.PORT;
 
 app.get('/', (req, res) => {
-    res.send('Hello World')
+    res.send('Hello World')  
 })
 
-app.use('/video', userRoute)
+app.use('/video', userRoute) 
 
 app.listen(port, () => {
     connect();
