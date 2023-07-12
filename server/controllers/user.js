@@ -2,8 +2,8 @@
 
 import express from 'express'
 
-export const checking = () => {
-    console.log('routes working')
+export const userController = (req, res) => {
+    res.send('User Page')
 }
 
 
