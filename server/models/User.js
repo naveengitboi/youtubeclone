@@ -19,7 +19,6 @@ const UserSchema = mongoose.Schema({
     },
     img:{
         type: String
-
     },
     scubscibers: {
         type : Number,

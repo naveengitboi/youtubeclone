@@ -21,6 +21,9 @@ const connect = () => {
 
 const app = express();
 const port = process.env.PORT;
+//middleware
+app.use(express.json())
+
 
 app.get('/', (req, res) => {
     res.send('Hello World')  
