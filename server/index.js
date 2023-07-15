@@ -41,6 +41,7 @@ app.use((err, req, res, next) => {
 
 })
 
+//routes
 
 app.get('/', (req, res) => {
     res.send('Hello World')  

@@ -56,7 +56,6 @@ export const signIn = async (req,res, next) => {
 
             }
             else{
-                console.log(comparingPwd)
                 return next(createError(504, "enter valie credintials"))
             }
         }
