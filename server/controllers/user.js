@@ -4,21 +4,10 @@ import User from '../models/User.js'
 // import mongoose from 'mongoose'
 
 export const update = async (req,res, next) => {
-    console.log(req.params)
-    console.log(req.user.id)
-    if(req.params.id === req.user.id){
-        console.log(true)
-        try {
-            const udpateUser = await User.findByIdAndUpdate(req.params.id, {
-                $set: req.body
-            })
-        } catch (error) {
-            next(createError(404, "something went wrong bro"))
-        }
-    }
-    else{
-        return next(createError(400, "you are not owner"))
-    }
+    const updateData = await User.findByIdAndUpdate({   "_id":req.params.id}, 
+        {
+            $set :req.body
+        })
 }
 export const deleteUser= (req,res, next) => {
 

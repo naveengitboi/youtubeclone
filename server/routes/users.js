@@ -2,12 +2,10 @@ import express from 'express'
 
 const router = express.Router()
 import { deleteUser, dislikevideo, getuser, likeVideo, update } from '../controllers/user.js'
-import  verifiedToken  from '../verifyToken.js'
-// import verifiedToken  from '../verifyToken.js'
 
 
 //update user 
-router.put('/:id', verifiedToken, update)
+router.put('/:id', update)
 
 
 //delete user 
