@@ -1,7 +1,6 @@
 import express from 'express'
 import { createError } from '../error.js'
 import User from '../models/User.js'
-// import mongoose from 'mongoose'
 
 
 //updat  user details
