@@ -1,12 +1,33 @@
-//routes folder
-
 import express from 'express'
-import { userController } from '../controllers/user.js';
-const router = express.Router();
+
+const router = express.Router()
+import { deleteUser, dislikevideo, getuser, likeVideo, update } from '../controllers/user.js'
+import { verifyToken } from '../verifyToken.js'
+
+//update user 
+router.put('/:id',verifyToken, update)
 
 
-//testing user page
+//delete user 
+router.delete('/:id', deleteUser)
 
-router.get('/test',userController )
 
+//like video
+router.put('/like/:videoId', likeVideo)
+
+//dislike video
+router.put('/dislike/:videoId', dislikevideo)
+
+//getUser
+router.get('/find/:id', getuser)
+
+//subscribe channel
+router.put('/sub/:id', getuser)
+
+//unsubscribe channel
+router.put('/unsub/:id', getuser)
+
+
+
+//export all routers
 export default router
