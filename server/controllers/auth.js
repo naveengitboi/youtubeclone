@@ -50,7 +50,7 @@ export const signIn = async (req,res, next) => {
                 const token = jwt.sign({id:loginUser._id}, process.env.SECRET_KEY )
 
                 const {password, ...otherDetails} = loginUser._doc
-                res.cookie("access-token", token, {
+                res.cookie("access_token", token, {
                     httpOnly:true
                 }).status(200).json(otherDetails)
 
@@ -60,7 +60,7 @@ export const signIn = async (req,res, next) => {
             }
         }
         else{
-            return next(createError(404, "user not found"))
+            return next(createError(404, "user not found brother in law"))
         }
         
     } catch (error) {

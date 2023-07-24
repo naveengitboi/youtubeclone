@@ -1,30 +1,15 @@
-// import jwt from 'jsonwebtoken'
-// import { createError } from './error,js';
+import jwt from 'jsonwebtoken'
+import { createError } from './error.js'
 
+export const verifyToken = ( req, res, next) => {
+    const token = req.cookies.access_token;
 
-// export const verifiedToken = (req, res, next) => {
-//     const token = req.cookies.access_token;
+    if(!token) return next(createError( 401, "not authorised user"))
 
-//     if(token == null) {
-//         return next(createError(404, "You are not authorised to do this functioning"))
-//     }
+    jwt.verify(token, process.env.SECRET_KEY, (err, user) => {
+        if(err) return next(createError(408,"Token expoired please login again"))
+        req.user = user
+        next()
+    })
+} 
 
-//     jwt.verify(token, process.env.SECRET_KEY, (err, user) => {
-//         console.log(user)
-//         if(err) {
-//             return next(createError(400, "timeout, do login again"))
-//         }
-        
-
-//         req.user = user;
-//         next();
-//     })
-
-// }
-
-
-// import jwt from 'jsonwebtoken'
-
-// export const verifiedToken = (req, res, next) => {
-//     const token = req.cookies.accestoken
-// }

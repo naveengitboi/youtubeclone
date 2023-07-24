@@ -5,11 +5,22 @@ import User from '../models/User.js'
 
 //updat  user details
 export const update = async (req,res, next) => {
-    const updateData = await User.findByIdAndUpdate({   "_id":req.params.id}, 
-        {
-            $set :req.body
-        })
-    res.status(200).send("User details chaned successfully")
+    if(req.params.id ===  req.user.id){
+        try {
+            const updateUser = await User.findByIdAndUpdate(
+                {"_id": req.params.id},
+                {$set: req.body},
+                {new:true}
+        )
+
+            res.status(200).json(updateUser)
+        } catch (error) {
+            next(createError(404, error.message))
+        }
+    }
+    else{
+        next(createError(400, "Authorise first bamardhi "))
+    }
 }
 
 //delete user from data base
