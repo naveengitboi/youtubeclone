@@ -25,33 +25,76 @@ export const update = async (req,res, next) => {
 
 //delete user from data base
 export const deleteUser= async (req,res, next) => {
+    if(req.user.id === req.params.id){
+       try {
+         await User.findByIdAndDelete({
+            "_id":req.params.id 
+        })
 
-    await User.findByIdAndDelete(
-        {
-            "_id":req.params.id
-        }
-    )
-    res.status(200).send("User Deleted from database")
+        res.send("User deleted succesfully dear uncle")
+       } catch (error) {
+        return next(400, "Please go and sign in again as token in expired")
+       }
+    }else{
+        return next(createError(408,"You cannot delete others account dear"))
+    }
 
 }
 
 
-export const subscribe = (req,res, next)=>{
-    
-}
-export const unsubscribe= (req,res, next)=>{
-    
+//subscribe user
+
+export const subscribe = async (req,res, next)=>{
+    try {
+        await User.findById(req.user.id, {
+            $push:{subscribedUsers:req.params.id}
+        })
+
+        await User.findByIdAndUpdate(req.params.id, {
+            $inc: {subscibers: 1}
+        })
+        res.send("Subscribed User Successfully")
+    } catch (error) {
+        return next(error)
+    }
 }
 
+//unsub user
+export const unsubscribe= async (req,res, next)=>{
+    try {
+        await User.findById(req.user.id, 
+            {$pull: {subscribedUsers: req.params.id}}
+            )
+        
+        await User.findByIdAndUpdate(req.params.id, 
+            {$inc:{ subscibers:-1}}
+            )
+
+        res.send("Unsub successfully")
+
+    } catch (error) {
+        return next(error)
+    }
+}
+
+//like video
 export const likeVideo= (req,res, next)=>{
     
 }
-
+//dislike video
 export const dislikevideo= (req,res, next)=>{
     
 }
 
-export const getuser= (req,res, next)=>{
-    
+//get user details
+
+export const getuser= async (req,res, next)=>{
+    try {
+        const userDetails = await User.findById(req.params.id)
+
+        res.status(200).json(userDetails)
+    } catch (error) {
+        next(error)
+    }
 }
 
