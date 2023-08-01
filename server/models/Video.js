@@ -27,6 +27,10 @@ const VideoSchema = mongoose.Schema({
         type: Number,
         default: []
     },
+    views:{
+        type:Number, 
+        default:0
+    },
     tags: {
         type: [String],
         default: []
