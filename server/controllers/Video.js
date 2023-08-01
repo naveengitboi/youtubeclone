@@ -4,7 +4,7 @@ import User from '../models/User.js'
 import { createError } from '../error.js'
 //add video
 export const addVideo = async (req,res,next) => {
-    const newVideo = new Video({userId : req.user.id, ...req.body})
+    const newVideo = new Video({userId : req.userId, ...req.body})
     try {
         const saveVideo = await newVideo.save()
         res.status(200).json(saveVideo)
