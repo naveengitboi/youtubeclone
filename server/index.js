@@ -6,6 +6,7 @@ import cookieParser from 'cookie-parser';
 //routes
 import userRoute from './routes/users.js'
 import authRoute from './routes/auth.js'
+import videosRoute from './routes/videos.js'
 
 // dotenv 
 dotenv.config()
@@ -49,6 +50,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/auth' , authRoute)
 app.use('/api/user', userRoute) 
+app.use('.api/video', videosRoute)
 
 app.listen(port, () => {
     connect(); 
