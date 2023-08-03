@@ -4,6 +4,8 @@ const router = express.Router()
 import { deleteUser, dislikevideo, getuser, likeVideo, subscribe, unsubscribe, update } from '../controllers/user.js'
 import { verifyToken } from '../verifyToken.js'
 
+
+
 //update user 
 router.put('/:id',verifyToken, update)
 
@@ -29,5 +31,5 @@ router.put('/dislike/:videoId',verifyToken, dislikevideo)
 router.get('/find/:id', getuser)
 
 
-//export all routers
+//export all routers 
 export default router

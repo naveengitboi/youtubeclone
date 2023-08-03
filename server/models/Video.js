@@ -20,11 +20,11 @@ const VideoSchema = mongoose.Schema({
         type: String 
     },
     likes: {
-        type:Number,
+        type:[String],
         default: []
     },
     disLikes: {
-        type: Number,
+        type: [String],
         default: []
     },
     views:{
