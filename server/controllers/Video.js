@@ -3,14 +3,15 @@ import Video from '../models/Video.js'
 import User from '../models/User.js'
 import { createError } from '../error.js'
 //add video
+
+
 export const addVideo = async (req,res,next) => {
-    const newVideo = new Video({userId : req.userId, ...req.body})
+    const newVideo = await new Video({userId: req.user.id ,...req.body})
     try {
         const saveVideo = await newVideo.save()
         res.status(200).json(saveVideo)
     } catch (error) {
         next(error)
-        
     }
 }
 
@@ -101,17 +102,40 @@ export const trend = async (req,res, next) => {
         next(error)
     }
 }
+
+export const getByTags = async (req,res,next) => {
+    const tags = req.query.tags.split(",")
+    try {
+        const videos = await Video.find({tags:{$in:tags}}).limit(20)
+
+        res.status(200).json(videos)
+    } catch (error) {
+     next(error)   
+    }
+}
+
+export const search = async (req,res,next) => {
+    const query = req.query.q 
+    try {
+        const videos = await Video.find({title: {$regex:query, $options:"i"}});
+        res.status(200).json(videos)
+    } catch (error) {
+        next(error)
+    }
+}
+
+
 export const sub = async (req,res, next) => {
     try {
      const user = await User.findById(req.user.id)
      const subscibeChannels = user.subscribedUsers;
-     const list = Promise.all(
+     const list = await Promise.all(
         subscibeChannels.map(channelId => {
-            return Video.findById({userId:channelId})
+            return Video.find({userId:channelId})
         })
      )
 
-     res.status(200).json(list)
+     res.status(200).json(list.flat().sort((a,b) => b.createdAt - a.createdAt))
     } catch (error) {
         next(error)
     }
