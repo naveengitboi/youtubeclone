@@ -7,7 +7,7 @@ const CommentSchema = mongoose.Schema({
         type: String,
         unique: true
     },
-    videoId: {
+    videoId: { 
         type: String,
         unique : true
     },

@@ -7,7 +7,7 @@ import cookieParser from 'cookie-parser';
 import userRoute from './routes/users.js'
 import authRoute from './routes/auth.js'
 import videosRoute from './routes/videos.js'
-
+import commentRouter from './routes/comments.js'
 // dotenv 
 dotenv.config()
 
@@ -36,8 +36,8 @@ app.use((err, req, res, next) => {
     const message = err.message || "Something went wrong worstly"
     return res.status(status).json({
         success:false,
-        message:message,
-        status:status
+        message,
+        status
     })
 
 })
@@ -51,6 +51,7 @@ app.get('/', (req, res) => {
 app.use('/api/auth' , authRoute)
 app.use('/api/user', userRoute) 
 app.use('/api/videos', videosRoute)
+app.use('/api/comments', commentRouter)
 
 app.listen(port, () => {
     connect(); 

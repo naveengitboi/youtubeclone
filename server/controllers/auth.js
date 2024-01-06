@@ -14,17 +14,17 @@ import jwt from 'jsonwebtoken'
 //custom error
 import { createError } from '../error.js'
 
-export const signUp = async (req,res, next) => {
-    
-    try {
-        const originalPwd = req.body.password
+export const signUp = async (req, res, next) => {
 
-    const salt = bcrypt.genSaltSync(10)
-    const hashingPwd = bcrypt.hashSync(originalPwd, salt)
-    
-    const newUser = await new User({...req.body, password:hashingPwd})
-    await newUser.save()
-    res.send("User saved to database :) ")
+    try {
+        // const originalPwd = req.body.password
+
+        const salt = bcrypt.genSaltSync(10)
+        const hashingPwd = bcrypt.hashSync(req.body.password, salt)
+
+        const newUser = await new User({ ...req.body, password: hashingPwd })
+        await newUser.save()
+        res.status(200).send("User saved to database :) ")
 
     } catch (error) {
         next(error)
@@ -35,34 +35,34 @@ export const signUp = async (req,res, next) => {
 
 //sign in
 
-export const signIn = async (req,res, next) => {
+export const signIn = async (req, res, next) => {
     try {
 
-        const {email, password} = req.body 
-        const loginUser = await User.findOne({email:email})
-        if(loginUser != null){
-            const dbPasword = await loginUser.password
-            const comparingPwd =await bcrypt.compare(password, dbPasword)
+        const { email, password } = req.body
+        const user = await User.findOne({ email: email })
+        if (user != null) {
+            const dbPasword = await user.password
+            const comparingPwd = await bcrypt.compare(password, dbPasword)
 
             //comparing password -> then wt to do
-            if(comparingPwd){
-                
-                const token = jwt.sign({id:loginUser._id}, process.env.SECRET_KEY )
+            if (comparingPwd) {
 
-                const {password, ...otherDetails} = loginUser._doc
+                const token = jwt.sign({ id: user._id }, process.env.SECRET_KEY)
+
+                const { password, ...otherDetails } = user._doc
                 res.cookie("access_token", token, {
-                    httpOnly:true
+                    httpOnly: true
                 }).status(200).json(otherDetails)
 
             }
-            else{
+            else {
                 return next(createError(504, "enter valie credintials"))
             }
         }
-        else{
+        else {
             return next(createError(404, "user not found brother in law"))
         }
-        
+
     } catch (error) {
         next(error)
     }

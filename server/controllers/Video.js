@@ -121,7 +121,7 @@ export const search = async (req,res,next) => {
         res.status(200).json(videos)
     } catch (error) {
         next(error)
-    }
+    } 
 }
 
 

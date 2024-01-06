@@ -8,7 +8,7 @@ export const update = async (req,res, next) => {
     if(req.params.id ===  req.user.id){
         try {
             const updateUser = await User.findByIdAndUpdate(
-                {"_id": req.params.id},
+                req.params.id,
                 {$set: req.body},
                 {new:true}
         )
@@ -27,11 +27,9 @@ export const update = async (req,res, next) => {
 export const deleteUser= async (req,res, next) => {
     if(req.user.id === req.params.id){
        try {
-         await User.findByIdAndDelete({
-            "_id":req.params.id 
-        })
+         await User.findByIdAndDelete(req.params.id )
 
-        res.send("User deleted succesfully dear uncle")
+        res.status(200).send("User deleted succesfully dear uncle")
        } catch (error) {
         return next(400, "Please go and sign in again as token in expired")
        }
