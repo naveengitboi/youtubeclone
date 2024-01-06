@@ -23,7 +23,7 @@ const VideoSchema = mongoose.Schema({
         type:[String],
         default: []
     },
-    disLikes: {
+    dislikes: {
         type: [String],
         default: []
     },
