@@ -1,8 +1,8 @@
-import express, { application } from 'express'
-import mongoose, { mongo } from 'mongoose';
+import express from 'express'
+import mongoose from 'mongoose';
 import dotenv from 'dotenv'
 import cookieParser from 'cookie-parser';
-
+import cors from 'cors'
 //routes
 import userRoute from './routes/users.js'
 import authRoute from './routes/auth.js'
@@ -28,7 +28,7 @@ const port = process.env.PORT;
 //middleware
 app.use(express.json())
 app.use(cookieParser())
-
+app.use(cors())
 
 //error handling middleware 
 app.use((err, req, res, next) => {

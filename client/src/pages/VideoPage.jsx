@@ -5,7 +5,6 @@ function VideoPage(){
         <>
             <div className="videoPageContainer">
                 <VideoPlaying/>
-                
             </div>
         </>
     )

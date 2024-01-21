@@ -14,7 +14,7 @@ function Menu({closingTime}){
             <ul className="navLinks">
                 <NavLink to='/' ><AiFillHome/> Home</NavLink>
                 <NavLink to='/shorts' ><AiFillHome/> Shorts</NavLink>
-                <NavLink to='/subscriptions' ><AiFillHome/> Subscriptions</NavLink>
+                <NavLink to='/subscribedvideos' ><AiFillHome/> Subscriptions</NavLink>
                 <hr />
                 <NavLink to='/library' ><MdVideoLibrary/> Library</NavLink>
                 <NavLink><AiOutlineHistory/> History</NavLink>
@@ -23,7 +23,7 @@ function Menu({closingTime}){
                 <NavLink><AiOutlineLike/> Liked Videos</NavLink>
                 <hr />
                 <p>Explore</p>
-                <NavLink><AiOutlineFire/> Trending</NavLink>
+                <NavLink to='/trending'><AiOutlineFire/> Trending</NavLink>
                 <NavLink><AiOutlineShopping/> Shopping</NavLink>
                 <NavLink><SiYoutubegaming/> Gaming</NavLink>
                 <NavLink><BsFilm/> Films</NavLink>

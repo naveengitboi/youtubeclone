@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import VideoCards from "../components/VideoCards"
 import '../css/Home.css'
-import ytData from '../data.js/Data'
 import axios from 'axios';
 
-function Home(props){
-    const {type} = props
+function Subscription(props){
+    const {type}= props;
     const [videos, setVideos] = useState([]);
     
     useEffect(() => {
@@ -30,4 +29,4 @@ function Home(props){
     )
 }
 
-export default Home
+export default Subscription
