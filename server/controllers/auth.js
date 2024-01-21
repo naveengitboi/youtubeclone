@@ -15,12 +15,12 @@ import jwt from 'jsonwebtoken'
 import { createError } from '../error.js'
 
 export const signUp = async (req, res, next) => {
-
+    console.log(req.body)
     try {
         // const originalPwd = req.body.password
 
         const salt = bcrypt.genSaltSync(10)
-        const hashingPwd = bcrypt.hashSync(req.body.password, salt)
+        const hashingPwd = await bcrypt.hashSync(req.body.password, salt)
 
         const newUser = await new User({ ...req.body, password: hashingPwd })
         await newUser.save()
@@ -38,8 +38,8 @@ export const signUp = async (req, res, next) => {
 export const signIn = async (req, res, next) => {
     try {
 
-        const { email, password } = req.body
-        const user = await User.findOne({ email: email })
+        const { name, password } = req.body
+        const user = await User.findOne({ name: name })
         if (user != null) {
             const dbPasword = await user.password
             const comparingPwd = await bcrypt.compare(password, dbPasword)
